@@ -11,13 +11,15 @@
 input.onButtonPressed(Button.A, function () {
     radio.sendString("speed_up")
 })
+input.onButtonPressed(Button.AB, function () {
+    radio.sendNumber(1000)
+})
 input.onButtonPressed(Button.B, function () {
     radio.sendString("speed_down")
 })
 /**
  * PORT_SETTINGS
  */
-basic.showNumber(10)
 basic.showIcon(IconNames.SmallSquare)
 radio.setGroup(42)
 loops.everyInterval(100, function () {
