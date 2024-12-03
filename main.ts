@@ -17,6 +17,7 @@ input.onButtonPressed(Button.B, function () {
 /**
  * PORT_SETTINGS
  */
+basic.showNumber(10)
 basic.showIcon(IconNames.SmallSquare)
 radio.setGroup(42)
 loops.everyInterval(100, function () {
