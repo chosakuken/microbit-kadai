@@ -1,3 +1,13 @@
+radio.onReceivedNumber(function (receivedNumber) {
+    basic.showIcon(IconNames.Chessboard)
+    basic.pause(500)
+    basic.clearScreen()
+    basic.showIcon(IconNames.Chessboard)
+    basic.pause(500)
+    basic.clearScreen()
+    basic.showString("your score was")
+    basic.showNumber(receivedNumber)
+})
 // 40:
 // 41:
 // 42: CONTROLLER A -> MACHINE A
@@ -17,9 +27,7 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     radio.sendString("speed_down")
 })
-/**
- * PORT_SETTINGS
- */
+// PORT_SETTINGS
 basic.showIcon(IconNames.SmallSquare)
 radio.setGroup(42)
 loops.everyInterval(100, function () {
